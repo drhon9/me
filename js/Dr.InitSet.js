@@ -22,21 +22,14 @@ var Dr ={};
                 $("div[data-includeHTML]").each(function () {                
                     $(this).load($(this).attr("data-includeHTML")); 
                 })
-
                 setTimeout(()=>{
-                    that.navEvent();
+                    Dr.Api.mainSet();
                 },1000)
           
             });
         },
         navEvent: function() {
-            $("a").click(function(e){
-                console.log(e.target.id)
-                Dr.Api.navReset(e.target.id);
-                let removeId = 'contentsId';
-                $('#'+ removeId).empty();
-                $('#contentsId').load("./view/contents/_Band.html");
-            });
+            //Dr.Api.mainSet();
         },
 
 
@@ -54,7 +47,7 @@ var Dr ={};
 
     Constructor.data = DrWeb;
     DrWeb();
-
+    
 })(window, Dr);
 
 var newWeb= new Dr.data() // 객체필요

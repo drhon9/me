@@ -2,22 +2,16 @@ Dr.Api = new function() {
     var that = this;
 
     // Dr.Api.navReset();
-    this.navReset= function(id){
-        let idData = id;
-        $('#contentsId').empty();
-
-        switch(idData){
-            case "tourEvent" : 
-            console.log("tourEvent")
-                $("#contentsId").html("<iframe src='./view/contents/_Tour.html'></iframe>");  
-                //$('#contentsId').load("./view/contents/_Tour.html");
-            break;
-
-            case "bandEvent" : 
-                $('#contentsId').load("./view/contents/_Band.html");
-            break;
-
-        }
+    this.mainSet= function(){
+        let mainPage =$("#contentsId");
+        $.get("./view/contents/_Band.html?check=" + Date.now(), function (data) {
+            mainPage.append(data);
+        });
+        $.get("./view/contents/_Tour.html?check=" + Date.now(), function (data) {
+            mainPage.append(data);
+        });
+        
+        
         
     }
 }
