@@ -7,6 +7,10 @@ li {
     letter-spacing: 2px;
 }
 
+.d8-margin-bottom {
+    margin-bottom: 8px!important;
+}
+
 @media (min-width: 993px){
     #rightNavi {
         position: fixed;
