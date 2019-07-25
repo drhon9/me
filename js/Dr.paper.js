@@ -13,21 +13,24 @@ var Dr ={};
 
 	DrWeb.prototype = {
 		init : function() {
-
             that.htmlLoad();
-    
         },
         htmlLoad: function() {
             $(document).ready(function () {
-                $("div[data-includeHTML]").each(function () {                
-                    $(this).load($(this).attr("data-includeHTML")); 
-                })
-                setTimeout(()=>{
-                    Dr.Api.mainSet();
-                },1000)
+                that.paperEvent();
+         
             });
         },
-  
+        paperEvent: function() {
+            $("#paper_menu").hide();
+            $('#select_paper').click( function() {
+                $("#paper_menu").show();
+            });
+            $('a').click( function() {
+                $("#paper_menu").hide();
+            });
+        },
+
         preset :{
 				// load_json :function(){
 				// 	var jsondata = DrAJAX.LoadJsonData('./ajax/init.json'); //'./ajax/osc.xml'
@@ -36,12 +39,9 @@ var Dr ={};
 		}
 
 	}; 
-
-
     Constructor.data = DrWeb;
     DrWeb();
 
 })(window, Dr);
-
 var newWeb= new Dr.data() // 객체필요
 newWeb.__proto__.init(); //초기 로드해야함
