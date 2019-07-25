@@ -10,6 +10,9 @@ li {
 .d8-margin-bottom {
     margin-bottom: 8px!important;
 }
+.px_10 {
+    font-size:11px;
+}
 
 @media (min-width: 993px){
     #rightNavi {
