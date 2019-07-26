@@ -3,6 +3,10 @@ body {font-family: "Lato", sans-serif}
 o {
     list-style:none
 }
+a {
+    text-decoration-line: none;
+    color: blue;
+}
 li {
     letter-spacing: 2px;
 }
@@ -13,6 +17,14 @@ li {
 .px_11 {
     font-size:11px;
 }
+.line_height_2{
+    line-height: 2; 
+}
+.img_center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 @media (min-width: 993px){
     #rightNavi {
