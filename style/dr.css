@@ -1,4 +1,10 @@
-body {font-family: "Lato", sans-serif}
+body {
+    font-family: "Lato", sans-serif;
+    padding: 0 !important;
+}
+.c56{
+    padding: 0 !important;
+}
 .mySlides {display: none}
 o {
     list-style:none

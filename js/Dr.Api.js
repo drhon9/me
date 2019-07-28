@@ -9,6 +9,9 @@ Dr.Api = new function() {
         });
         $.get("./view/contents/contactSection.html?check=" + Date.now(), function (data) {
             mainPage.append(data);
-        });   
+        }); 
+        // $.get("./view/contents/cvSection.html?check=" + Date.now(), function (data) {
+        //     mainPage.append(data);
+        // });   
     }
 }
