@@ -27,7 +27,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
       <a href="#web_0" class="w3-bar-item w3-button ">web audio library</a>
       <a href="#editor" class="w3-bar-item w3-button ">web audio editor</a>
       <a href="#websimple" class="w3-bar-item w3-button">web audio application</a>
-      <a href="#web_inter" class="w3-bar-item w3-button">interactive web application</a>
+      <a href="#web_inter" class="w3-bar-item w3-button" id="interactiveBtn">interactive web application</a>
     </div>
 
     <a href="#drsaxophone" class="w3-bar-item w3-button" id="physicalBtn">Physical Computing</a>
@@ -175,7 +175,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     </div>
 
     <!-- "Dr.WebSax" -->
-    <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+    <div class="w3-container w3-card w3-white w3-round w3-margin" id="WebSax"><br>
        <h4 style="display:inline-block">Dr.WebSax</h4>
         <a href="https://youtu.be/GgGJUSmtbAY" class="w3-bar-item w3-button" target="_blank"><i class="fa fa-youtube-play w3-xxxlarge"></i></a>
         <a href="https://youtu.be/dXG3VZChIp8" class="w3-bar-item w3-button" target="_blank"><i class="fa fa-youtube-play w3-xxxlarge"></i></a>
@@ -199,7 +199,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
 
     <!-- "DrSaxoman" -->
-    <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+    <div class="w3-container w3-card w3-white w3-round w3-margin" id="DrSaxoman"><br>
        <h4 style="display:inline-block">DrSaxoman</h4>
         <a href="https://vimeo.com/198987449" class="w3-bar-item w3-button" target="_blank"><i class="fa fa-youtube-play w3-xxxlarge"></i></a>
         Wep App:
@@ -301,7 +301,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <div class="w3-container w3-black w3-padding-8" = style="margin-bottom:20px" id="drsaxophone">
         <h4 >Dr.saxophone</h4>
     </div>
-    <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+    <div class="w3-container w3-card w3-white w3-round w3-margin" id="drsaxophone_box"><br>
        <h4 style="display:inline-block">Dr.saxophone</h4>
         <a href="https://youtu.be/do_yuLdVTCo" class="w3-bar-item w3-button" target="_blank"><i class="fa fa-youtube-play w3-xxxlarge"></i></a>
 
@@ -323,10 +323,10 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <!-- "Dr.saxophone 2" -->
 
     </br></br></br>
-    <div class="w3-container w3-black w3-padding-8" = style="margin-bottom:20px" id="drsaxophone">
+    <div class="w3-container w3-black w3-padding-8" = style="margin-bottom:20px" id="drsaxophone2">
         <h4 >Dr.saxophone 2</h4>
     </div>
-    <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+    <div class="w3-container w3-card w3-white w3-round w3-margin" id="drsaxophone2_box"><br>
        <h4 style="display:inline-block">Dr.saxophone 2</h4>
         <a href="https://vimeo.com/198987449" class="w3-bar-item w3-button" target="_blank"><i class="fa fa-youtube-play w3-xxxlarge"></i></a>
         Wep App:
@@ -347,10 +347,10 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <!-- "Telesaxophone" -->
 
     </br></br></br>
-    <div class="w3-container w3-black w3-padding-8" = style="margin-bottom:20px" id="drsaxophone">
+    <div class="w3-container w3-black w3-padding-8" = style="margin-bottom:20px" id="telesaxophone">
         <h4 >Telesaxophone</h4>
     </div>
-    <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+    <div class="w3-container w3-card w3-white w3-round w3-margin" id="telesaxophone_box"><br>
        <h4 style="display:inline-block">Telesaxophone</h4>
         <a href="https://youtu.be/A8AwpO7b5w4" class="w3-bar-item w3-button" target="_blank"><i class="fa fa-youtube-play w3-xxxlarge"></i></a>
       <hr class="w3-clear">
@@ -372,7 +372,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <div class="w3-container w3-black w3-padding-8" = style="margin-bottom:20px" id="car">
         <h4>Bluetooth R/C car</h4>
     </div>
-    <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+    <div class="w3-container w3-card w3-white w3-round w3-margin" id="car_box"><br>
        <h4 style="display:inline-block">Bluetooth R/C car</h4>
         <a href="https://youtu.be/cMLQkNBXVf4" class="w3-bar-item w3-button" target="_blank"><i class="fa fa-youtube-play w3-xxxlarge"></i></a>
       <hr class="w3-clear">
@@ -404,7 +404,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
                 </p>
             </div>
         </div>
-        <div class="w3-col l3 s6">
+        <div class="w3-col l3 s6" id="miracle_sax">
             <div class="w3-container">
                 <div class="w3-display-container">
                     <img src="./../img/miracle.png" style="width:100%">
@@ -534,51 +534,69 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
 
 <script>
+    function searchParam(key) {
+        return new URLSearchParams(location.search).get(key);
+    };
+    function disableUI(array, on_off) {
+
+        displayNode =(id)=>{
+            let on_off_set = on_off?"block":"none"
+            document.getElementById(id).style.display = on_off_set;
+        } 
+        return array.map((data, i)=>{
+            displayNode(data)
+        })
+    }
+    var idArray = [ "physicalBtn", "physical", "musicBtn" ,'telesaxophone_box', "car_box", "drsaxophone_box","drsaxophone2_box",'telesaxophone', "car", "inter", "drsaxophone","drsaxophone2","miracle_sax", "interactiveBtn", "DrSaxoman","WebSax", "web_inter"];
 
     $(document).ready(function(){
+        disableUI(idArray)
+        if (searchParam("music")){
+            disableUI(idArray, 1)
+        }
 
-    $("#installationBtn").click(function(){
-        let name = $("#installation").attr('class')
-        if ( name.indexOf("w3-show") === -1) {
-            $("#installation").removeClass("w3-hide");
-            $("#installation").addClass("w3-show");
-        }else{
-            $("#installation").removeClass("w3-show");
-            $("#installation").addClass("w3-hide");
-        }
-    });
-    $("#webBtn").click(function(){
-        let name = $("#web").attr('class')
-        if ( name.indexOf("w3-show") === -1) {
-            $("#web").removeClass("w3-hide");
-            $("#web").addClass("w3-show");
-        }else{
-            $("#web").removeClass("w3-show");
-            $("#web").addClass("w3-hide");
-        }
-    });
-    $("#physicalBtn").click(function(){
-        let name = $("#physical").attr('class')
-        if ( name.indexOf("w3-show") === -1) {
-            $("#physical").removeClass("w3-hide");
-            $("#physical").addClass("w3-show");
-        }else{
-            $("#physical").removeClass("w3-show");
-            $("#physical").addClass("w3-hide");
-        }
-    });
-    $("#musicBtn").click(function(){
-        let name = $("#music").attr('class')
-        if ( name.indexOf("w3-show") === -1) {
-            $("#music").removeClass("w3-hide");
-            $("#music").addClass("w3-show");
-        }else{
-            $("#music").removeClass("w3-show");
-            $("#music").addClass("w3-hide");
-        }
-    });
+        $("#installationBtn").click(function(){
+            let name = $("#installation").attr('class')
+            if ( name.indexOf("w3-show") === -1) {
+                $("#installation").removeClass("w3-hide");
+                $("#installation").addClass("w3-show");
+            }else{
+                $("#installation").removeClass("w3-show");
+                $("#installation").addClass("w3-hide");
+            }
+        });
+        $("#webBtn").click(function(){
+            let name = $("#web").attr('class')
+            if ( name.indexOf("w3-show") === -1) {
+                $("#web").removeClass("w3-hide");
+                $("#web").addClass("w3-show");
+            }else{
+                $("#web").removeClass("w3-show");
+                $("#web").addClass("w3-hide");
+            }
+        });
+        $("#physicalBtn").click(function(){
+            let name = $("#physical").attr('class')
+            if ( name.indexOf("w3-show") === -1) {
+                $("#physical").removeClass("w3-hide");
+                $("#physical").addClass("w3-show");
+            }else{
+                $("#physical").removeClass("w3-show");
+                $("#physical").addClass("w3-hide");
+            }
+        });
+        $("#musicBtn").click(function(){
+            let name = $("#music").attr('class')
+            if ( name.indexOf("w3-show") === -1) {
+                $("#music").removeClass("w3-hide");
+                $("#music").addClass("w3-show");
+            }else{
+                $("#music").removeClass("w3-show");
+                $("#music").addClass("w3-hide");
+            }
+        });
 
-});
+    });
 
 </script>
 
