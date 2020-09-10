@@ -21,7 +21,7 @@ var Dr ={};
             $(document).ready(function () {
 
                 that.mainImage();
-                
+
                 $("div[data-includeHTML]").each(function () {                
                     $(this).load($(this).attr("data-includeHTML")); 
                 })
@@ -33,8 +33,8 @@ var Dr ={};
         mainImage: function() {
             let imgTag = document.getElementById('mainImage');
             let imgArray = [
-                "sa","mot","dw2","wa","webo","mix","mn","bioMain","rc","webp",
-                "delta","dreffect","cp2017","drs","drsaxophone_1","mn","reso","teles",
+                "sa","mot","dw2","wa","webo","mn","bioMain","rc","webp",
+                "delta","dreffect","mn","reso","teles",
             ];
             let number = Math.floor(Math.random() * imgArray.length);
             imgTag.src =`./img/${imgArray[number]}.jpg`
