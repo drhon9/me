@@ -33,8 +33,8 @@ var Dr ={};
         mainImage: function() {
             let imgTag = document.getElementById('mainImage');
             let imgArray = [
-                "sa","mot","dw2","wa","webo","mn","bioMain","rc","webp",
-                "delta","dreffect","mn","reso","teles","rock","drsaxCover"
+                "sa","mot","dw2","webo","mn","bioMain","rc","webp",
+                "delta","dreffect","mn","teles","rock","drsaxCover"
             ];
             let number = Math.floor(Math.random() * imgArray.length);
             imgTag.src =`./img/${imgArray[number]}.jpg`
